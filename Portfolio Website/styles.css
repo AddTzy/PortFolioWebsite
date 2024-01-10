@@ -23,6 +23,75 @@
     margin: 0 auto;
 }
 
+.night-mode {
+    background-color: #1a1a1a; 
+    color: #ffffff; 
+}
+
+#nightModeToggle{
+  position:absolute;
+  top: 2%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  padding: 6px 12px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+#nightModeToggle:hover {
+  background-color: #2980b9;
+}
+
+/* .nights {
+    margin-bottom:30%;
+} */
+
+.night-mode .navbar {
+    background-color: white; 
+    color:black;
+    width: 100%;
+    padding-top:0;
+}
+
+.night-mode footer{
+    background-color: #150f0f; 
+}
+
+.night-mode .my-image {
+    padding: 2.5rem;
+    filter: grayscale(1);
+    transition: all 1s;
+    animation: nightScaleImage 5s linear infinite;
+    z-index: -9;
+}
+
+@keyframes nightScaleImage {
+    0% {
+        filter: grayscale(0);
+        transform: scale(1);
+    }
+
+    50% {
+        filter: grayscale(1);
+        transform: scale(1.1);
+        box-shadow: 3px 3px 10px rgb(246, 246, 246);
+
+    }
+
+    100% {
+        filter: grayscale(0);
+        transform: scale(1);
+    }
+}
 .navbar {
     width:1200px;
     display: flex;
@@ -574,7 +643,6 @@ a {
     }
 
     .project-card:hover .project-number {
-        /* display: none; */
         font-size: 50px;
     }
 
@@ -822,3 +890,233 @@ footer {
     font-weight:900;
     display:none;
 }
+
+
+@media (max-width:1300px) {
+
+    .hero-section-description{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+    }
+    .page-header {
+      padding-top: 30px;
+      color: var(--bgOrange);
+      text-align: center;
+      font-size: 40px;
+    }
+    .project-container {
+      padding: 5px;
+      margin: 10px;
+      gap: 60px;
+    }
+    .project-card {
+      width: 100%;
+      height: 300px;
+    }
+    .project-card {
+      background-size: cover;
+      background-position: center;
+    }
+    .project-content {
+      scale: 0.5;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      top: 0;
+    }
+    .project-content-left {
+      left: 0;
+    }
+    .project-heading {
+      font-size: 40px;
+      width: 100%;
+    }
+    .project-sub-heading {
+      width: 100%;
+    }
+    #project2 {
+      margin-left: 0;
+    }
+    #project4 {
+      margin-left: 0;
+    }
+    .project-skill-container {
+      width: 100%;
+    }
+    .project-skill {
+      width: 35px;
+    }
+    .project-card:hover .project-number {
+      display: none;
+    }
+    .project-card:hover .project-content {
+      scale: 0.55;
+    }
+    .faded-text {
+        visibility: hidden;
+    }
+    .skill-fade-text {
+        visibility: hidden;
+    }
+    .footer-faded-text{
+        visibility: hidden;
+    }
+    .formfield {
+        width:50%;
+        height:60%;
+        margin-top: 20px;
+        margin-right:300px;
+        /* display: flex;
+        align-items: center; */
+        /* justify-content: center; */
+        /* align-content: center; */
+    }
+    .formfield-textarea{
+        height:50px;
+    }
+    .formfield::placeholder{
+        font-size: 6px;
+        text-align: center;
+        margin-top: 2px;
+        transform: translateY(-50%);
+    }
+    .skill-subHeading{
+        font-size:10px;
+    }
+    .contactus-heading{
+        font-size:15px;
+        /* margin-left: 175px;
+         */
+         text-align:center;
+    }
+    .contactus-sub-heading{
+        font-size:15px;
+        /* margin-left: 175px   ; */
+        text-align: center;
+    }
+    .text2{
+        font-size: 10px;
+    }
+    #submit-btn {
+        width:150px;
+    }
+    .hero-section{
+        width:400px;
+        height:300px;
+    }
+    .hero-section-heading{
+        font-size:20px;
+    }
+    .hero-section-sub-heading{
+        font-size:20px;
+    }
+    .hero-section-right{
+        position:absolute;
+        /* display:block; */
+        /* justify-content:end; */
+    }
+    .my-image{
+        animation: none;
+        filter:grayscale(0);
+        /* margin-left: 0px; */
+    }
+    .myImage {
+        height:1px;
+        width:1px;
+        /* padding-top:510px; */
+        border-radius:8px;
+        margin-left:0;
+        /* margin-right:100%; */
+        visibility:hidden ;
+    }
+    .icon-dots{
+        visibility: hidden;
+    }
+    .icon-circle{
+        visibility: hidden;
+    }
+    .icon-cube{
+        visibility: hidden;
+    }
+    .icon-wrapper{
+        /* visibility: hidden; */
+        /* display:inline-flex; */
+        margin-top:30px;
+    }
+    .footer-wrapper{
+        display:block;
+    }
+    .icon-zigzags{
+        visibility: hidden;
+    }
+    .icon-plus{
+        visibility: hidden;
+    }
+    .navbar {
+        width: 450px;
+    }
+    .logo-text {
+        margin-left: -0.5rem;
+        font-size: 12px;
+        font-weight: 800;
+    }
+    .nav-items {
+        display: flex;
+        gap: -1rem;
+        /* padding: 0em; */
+    } 
+    .nav-items div {
+        font-size: 10px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: font-weight 0.8s ease 0.1s;
+    }
+    .blob-style {
+        position:absolute;
+        height:200px;
+        width:200px;
+        top:50%;
+        z-index:-5;
+        left:50%;
+        transform:translate(-50%, -50%);
+        animation: blobAnimate 3s linear infinite;
+    }
+    #nightModeToggle{
+        position:absolute;
+        top: 1%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1000;
+        padding: 4px 8px;
+        background-color: #3498db;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 8px;
+        transition: background-color 0.3s ease;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+    .sunMoon{
+        height:15px;
+        width:15px;
+    }
+    .obj1 {
+        height:10px;
+        width:10px;
+    }
+    .alert {
+        width:50%;
+        background-color: rgb(143, 164, 144);
+        padding:10px 20px;
+        border-radius: 5px;
+        text-align: center;
+        font-size:12px;
+        font-weight:500;
+        display:none;
+    }
+  }
